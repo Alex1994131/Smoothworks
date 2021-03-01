@@ -12,7 +12,7 @@
                         <div class="dash-widget">
                             <i class="mdi mdi-account-box text-custom"></i>
                             <h2 class="m-0 text-dark counter font-600"><?php echo $dashboard_details['total_gigs']; ?></h2>
-                            <div class="text-muted m-t-5">Total Gigs</div>
+                            <div class="text-muted m-t-5">Total Services</div>
                         </div>
                     </a>
                 </div>
@@ -107,12 +107,12 @@
                     <div class="card-box">
                         <a href="<?php echo base_url() . "admin/gigs"; ?>" class="pull-right btn btn-default btn-sm">View
                             All</a>
-                        <h4 class="text-dark header-title m-t-0 m-b-20">Popular Products</h4>
+                        <h4 class="text-dark header-title m-t-0 m-b-20">Popular Services</h4>
                         <div class="table-responsive">
                             <table class="table">
                                 <thead>
                                 <tr>
-                                    <th>Product</th>
+                                    <th>Service</th>
                                     <th>Addded Date</th>
                                     <th>Views</th>
                                     <th>Amount</th>

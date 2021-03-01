@@ -15,7 +15,7 @@
                     <h4 class="page-title m-b-20 m-t-0">Membership</h4>
                 </div>
                 <div class="col-sm-8 text-right m-b-20">
-                    <a href="<?php echo base_url() . 'admin/membership'; ?>" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i> Go to List</a>
+                    <a href="<?php echo base_url() . 'admin/membership'; ?>" class="btn btn-primary btn-sm"><i class="fa fa-reply"></i> Go to List</a>
                 </div>
             </div>
             <?php if ($this->session->flashdata('message')) { ?>

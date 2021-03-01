@@ -50,10 +50,7 @@
                                             echo 'checked=""';
                                         }
                                         ?>>
-                                        <?php if ($list['verified'] == 1) { ?>
-                                            <label for="user_verified">Inactive</label>
-                                        <?php } ?>
-
+                                        <label for="user_verified">Inactive</label>
                                     </div>
                                 </div>
                             </div>
