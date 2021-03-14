@@ -131,7 +131,6 @@ function get_all_chats(group_id) {
 
         $("#msglist").html(html);
     });
-
 }
 
 function chat_details(group_id) {

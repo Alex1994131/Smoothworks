@@ -140,6 +140,7 @@ class Dashboard extends CI_Controller
         $this->load->model('admin_panel_model');
 
         $this->data['datalist'] = $this->admin_panel_model->edit_terms($id);
+
         if ($this->data['admin_id'] > 1) {
             $this->session->set_flashdata('message', '<p class="alert alert-danger">Permission Denied</p>');
             redirect(base_url() . 'admin/dashboard/terms/');
@@ -147,12 +148,14 @@ class Dashboard extends CI_Controller
         } else {
             if ($this->input->post('form_submit')) {
                 $value = $this->input->post('sub_menu');
+
+                
                 $data['footer_submenu'] = str_replace(' ', '_', $value);
+                
                 $data['page_desc'] = $this->input->post('page_desc');
                 $this->db->where('id', $id);
-                if ($this->db->update('term', $data)) {
+                if ($this->db->update('terms', $data)) {
                     $message = "<div class='alert alert-success text-center fade in' id='flash_succ_message'>Terms edited successfully.</div>";
-
                 }
 
                 $this->session->set_flashdata('message', $message);
