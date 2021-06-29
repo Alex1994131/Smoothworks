@@ -5,7 +5,7 @@ RewriteEngine On
 
 
 
-RewriteBase /smoothworks.com/
+RewriteBase e:/works/projects/smoothwork/smoothworks/
 
 
 
@@ -21,6 +21,6 @@ RewriteCond %{REQUEST_FILENAME} !-d
 
 
 
-RewriteRule . /smoothworks.com/index.php [L]
+RewriteRule . e:/works/projects/smoothwork/smoothworks/index.php [L]
 
 

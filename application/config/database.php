@@ -156,7 +156,7 @@ $db['default'] = array(
 
     'password' => '',
 
-    'database' => 'u630821547_smoothworks',
+    'database' => 'smoothworks',
 
     'dbdriver' => 'mysqli',
 
